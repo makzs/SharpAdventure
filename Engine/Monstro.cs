@@ -13,6 +13,7 @@ namespace Engine
         public int DanoMaximo { get; set; }
         public int RecompensaExperiencia { get; set; }
         public int RecompensaOuro { get; set; }
+        public List<LootItem> LootItems { get; set; }
 
         public Monstro(int vidaAtual, int vidaMaxima, int id, string nome, int danoMaximo, int recompensaExperiencia, int recompensaOuro)
             : base(vidaAtual, vidaMaxima)
@@ -22,6 +23,7 @@ namespace Engine
             DanoMaximo = danoMaximo;
             RecompensaExperiencia = recompensaExperiencia;
             RecompensaOuro = recompensaOuro;
+            LootItems = new List<LootItem>();
         }
     }
 }

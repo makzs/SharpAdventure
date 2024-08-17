@@ -18,7 +18,7 @@ namespace SharpAdventure
         {
             InitializeComponent();
 
-            Localizacao locazalizao1 = new Localizacao(1, "Casa", "Essa é a sua casa!");
+            Localizacao locazalizao1 = new Localizacao(1, "Casa", "Essa é a sua casa!", null, null, null);
 
             _jogador = new Jogador(10, 10, 20, 0, 1);
 

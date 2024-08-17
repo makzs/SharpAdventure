@@ -43,13 +43,17 @@
   <ItemGroup>
     <Compile Include="Arma.cs" />
     <Compile Include="Criatura.cs" />
+    <Compile Include="InventarioItens.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Jogador.cs" />
+    <Compile Include="JogadorQuests.cs" />
     <Compile Include="Localizacao.cs" />
+    <Compile Include="LootItem.cs" />
     <Compile Include="Monstro.cs" />
     <Compile Include="PocaoDeVida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quest.cs" />
+    <Compile Include="QuestItem.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
