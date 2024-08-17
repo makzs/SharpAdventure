@@ -16,7 +16,7 @@ namespace Engine
         public Item RecompensaItem { get; set; }
         public List<QuestItem> QuestItem {  get; set; }
 
-        public Quest(int id, string nome, string descricao, int recompensaExperiencia, int recompensaOuro, Item recompensaItem)
+        public Quest(int id, string nome, string descricao, int recompensaExperiencia, int recompensaOuro, Item recompensaItem = null)
         {
             Id = id;
             Nome = nome;
