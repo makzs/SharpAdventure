@@ -27,8 +27,37 @@ namespace SharpAdventure
             lblExperiencia.Text = _jogador.PontosDeExperiencia.ToString();
             lblNivel.Text = _jogador.Nivel.ToString();
 
-            
+
         }
-       
+
+        private void btnNorte_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLeste_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSul_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOeste_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUsarArma_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUsarPocao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
