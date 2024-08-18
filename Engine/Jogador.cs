@@ -13,6 +13,7 @@ namespace Engine
         public int Nivel { get; set; }
         public List<InventarioItens> Inventario { get; set; }
         public List<JogadorQuests> Quests { get; set; }
+        public Localizacao LocalizacaoAtual { get; set; }
 
         public Jogador(int vidaAtual, int vidaMaxima, int ouro, int pontosDeExperiencia, int nivel)
             :base(vidaAtual, vidaMaxima)
