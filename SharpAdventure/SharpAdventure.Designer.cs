@@ -152,7 +152,7 @@
             btnUsarArma.Name = "btnUsarArma";
             btnUsarArma.Size = new Size(75, 23);
             btnUsarArma.TabIndex = 11;
-            btnUsarArma.Text = "button1";
+            btnUsarArma.Text = "Arma";
             btnUsarArma.UseVisualStyleBackColor = true;
             btnUsarArma.Click += btnUsarArma_Click;
             // 
@@ -162,7 +162,7 @@
             btnUsarPocao.Name = "btnUsarPocao";
             btnUsarPocao.Size = new Size(75, 23);
             btnUsarPocao.TabIndex = 12;
-            btnUsarPocao.Text = "button1";
+            btnUsarPocao.Text = "Poção";
             btnUsarPocao.UseVisualStyleBackColor = true;
             btnUsarPocao.Click += btnUsarPocao_Click;
             // 
@@ -172,7 +172,7 @@
             btnNorte.Name = "btnNorte";
             btnNorte.Size = new Size(75, 23);
             btnNorte.TabIndex = 13;
-            btnNorte.Text = "button1";
+            btnNorte.Text = "Norte";
             btnNorte.UseVisualStyleBackColor = true;
             btnNorte.Click += btnNorte_Click;
             // 
@@ -182,7 +182,7 @@
             btnLeste.Name = "btnLeste";
             btnLeste.Size = new Size(75, 23);
             btnLeste.TabIndex = 14;
-            btnLeste.Text = "button1";
+            btnLeste.Text = "Leste";
             btnLeste.UseVisualStyleBackColor = true;
             btnLeste.Click += btnLeste_Click;
             // 
@@ -192,7 +192,7 @@
             btnSul.Name = "btnSul";
             btnSul.Size = new Size(75, 23);
             btnSul.TabIndex = 15;
-            btnSul.Text = "button1";
+            btnSul.Text = "Sul";
             btnSul.UseVisualStyleBackColor = true;
             btnSul.Click += btnSul_Click;
             // 
@@ -202,7 +202,7 @@
             btnOeste.Name = "btnOeste";
             btnOeste.Size = new Size(75, 23);
             btnOeste.TabIndex = 16;
-            btnOeste.Text = "button1";
+            btnOeste.Text = "Oeste";
             btnOeste.UseVisualStyleBackColor = true;
             btnOeste.Click += btnOeste_Click;
             // 

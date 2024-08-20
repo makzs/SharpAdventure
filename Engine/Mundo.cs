@@ -114,7 +114,7 @@ namespace Engine
                     descricao: "Mate os morcegos que infestaram a caverna proximo a minha cabana e me traga 3 asas de morcegos." +
                     " Voce ira receber uma poção de cura e 10 ouros por isso",
                     recompensaExperiencia: 20,
-                    recompensaItem: ItemById(ITEM_ID_POCAO_DE_CURA),
+                    recompensaItem: ItemById(ITEM_ID_MACHADO_DE_FERRO),
                     recompensaOuro: 10);
 
             limparCaverna.QuestItem.Add(new QuestItem(ItemById(ITEM_ID_ASAS_DE_MORCEGO), 3));
@@ -129,7 +129,7 @@ namespace Engine
                     recompensaItem: ItemById(ITEM_ID_PASSAPORTE_DE_AVENTUREIRO),
                     recompensaOuro: 15);
 
-            limparCaverna.QuestItem.Add(new QuestItem(ItemById(ITEM_ID_DENTE_DE_COBRA), 3));
+            ajudarFazendeiros.QuestItem.Add(new QuestItem(ItemById(ITEM_ID_PEDACO_DE_COURO), 3));
 
 
             Quests.Add(limparCaverna);
