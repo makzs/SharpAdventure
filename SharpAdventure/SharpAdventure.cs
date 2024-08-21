@@ -20,16 +20,12 @@ namespace SharpAdventure
             InitializeComponent();
 
             // configurações iniciais, sempre que se iniciar o jogo ele vai carregar essas informações
-            _jogador = new Jogador(10, 10, 20, 0, 1);
+            _jogador = new Jogador(vidaAtual: 10, vidaMaxima: 10, ouro: 20, pontosDeExperiencia: 0);
             _jogador.Inventario.Add(new InventarioItens(Mundo.ItemById(Mundo.ITEM_ID_ESPADA_DE_MADEIRA), 1));
             MoveTo(Mundo.LocalizacaosById(Mundo.LOCALIZACAO_ID_CASA));
 
 
-            lblVida.Text = _jogador.VidaAtual.ToString();
-            lblOuro.Text = _jogador.Ouro.ToString();
-            lblExperiencia.Text = _jogador.PontosDeExperiencia.ToString();
-            lblNivel.Text = _jogador.Nivel.ToString();
-
+            atualizarStatsJogador();
 
         }
 
@@ -368,10 +364,7 @@ namespace SharpAdventure
                 }
 
                 // atualiza a interface
-                lblVida.Text = _jogador.VidaAtual.ToString();
-                lblOuro.Text = _jogador.Ouro.ToString();
-                lblExperiencia.Text = _jogador.PontosDeExperiencia.ToString();
-                lblNivel.Text = _jogador.Nivel.ToString();
+                atualizarStatsJogador();
 
                 atualizarListaInventarioUI();
                 atualizarListaArmasUI();
@@ -463,6 +456,15 @@ namespace SharpAdventure
             atualizarListaInventarioUI();
             atualizarListaPocoesUI();
 
+        }
+
+        // atualiza os stats do jogador
+        private void atualizarStatsJogador()
+        {
+            lblVida.Text = _jogador.VidaAtual.ToString();
+            lblOuro.Text = _jogador.Ouro.ToString();
+            lblExperiencia.Text = _jogador.PontosDeExperiencia.ToString();
+            lblNivel.Text = _jogador.Nivel.ToString();
         }
 
 

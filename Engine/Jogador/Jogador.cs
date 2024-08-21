@@ -10,17 +10,19 @@ namespace Engine
     {
         public int Ouro { get; set; }
         public int PontosDeExperiencia { get; set; }
-        public int Nivel { get; set; }
+        public int Nivel 
+        { 
+            get { return ((PontosDeExperiencia / 100) + 1); }
+        }
         public List<InventarioItens> Inventario { get; set; }
         public List<JogadorQuests> Quests { get; set; }
         public Localizacao LocalizacaoAtual { get; set; }
 
-        public Jogador(int vidaAtual, int vidaMaxima, int ouro, int pontosDeExperiencia, int nivel)
+        public Jogador(int vidaAtual, int vidaMaxima, int ouro, int pontosDeExperiencia)
             :base(vidaAtual, vidaMaxima)
         {
             Ouro = ouro;
             PontosDeExperiencia = pontosDeExperiencia;
-            Nivel = nivel;
             Inventario = new List<InventarioItens>();
             Quests = new List<JogadorQuests>();
         }
